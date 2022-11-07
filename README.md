@@ -4,11 +4,8 @@
 ## Call the API
 	- Add [converter.js](assets/script/convert.js) to your html files,e.g:
 ```html
-<script src="node_modules/blueimp-file-upload/js/jquery.fileupload.js"></script>
+<script src="assets/script/converter.js"></script>
 ```
-	```html  
-	<script src="assets/script/converter.js" defer></script>
-	```
 ## Call function in API
 #### 1. Convert fahrenheit to celsius
 		   Use following way 
