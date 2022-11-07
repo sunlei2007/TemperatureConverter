@@ -1,12 +1,12 @@
 # Temperature converter
 ##Description
->Temperature converter API is used to convert Fahrenheit to Celsius and Celsius to Fahrenheit.
+  Temperature converter API is used to convert Fahrenheit to Celsius and Celsius to Fahrenheit.
 ##Call the API
 	- Add [converter.js] to your html files,e.g:
 	```html  
 	<script src="assets/script/converter.js" defer></script>
 	```
-##Call function
+##Call function in API
 ####1. Convert fahrenheit to celsius
 		   Use following way 
 		   ```js
