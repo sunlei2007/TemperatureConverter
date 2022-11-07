@@ -2,7 +2,7 @@
 ## Description
   > Temperature converter API is used to convert Fahrenheit to Celsius and Celsius to Fahrenheit.
 ## Call the API
-This allows you to include [converter.js](assets/script/convert.js),e.g:
+This allows you to include [converter.js](assets/script/convert.js), e.g:
 ```html
 <script src="assets/script/converter.js"></script>
 ```
@@ -40,4 +40,4 @@ function compute(tempValue) {
 }
 ```
 ## Demo
-Click here(https://sunlei2007.github.io/TemperatureConverter/)
+Click [here](https://sunlei2007.github.io/TemperatureConverter/) to visit
