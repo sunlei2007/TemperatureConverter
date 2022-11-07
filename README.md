@@ -15,7 +15,29 @@ toCe();
 #### 2. Convert celsius to fahrenheit
 Use following way 
 ```js
-toCe();
+toFa();
+```
+## Use script
+```js
+function compute(tempValue) {
+    
+    if (tempValue === "") {
+        
+        result.value = "Temprature cann't be empty!";
+        return;
+    }
+    if (isNaN(tempValue)) {
+        result.value = "Number is required!";
+        return;
+    }
+    
+    if (chkSwitch.checked) {
+        result.value = toCe(tempValue);
+    }
+    else {
+        result.value = toFa(tempValue);
+    }
+}
 ```
 ## Demo
 Click here(https://sunlei2007.github.io/TemperatureConverter/)

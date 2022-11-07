@@ -24,15 +24,6 @@ function compute(tempValue) {
         return;
     }
     
-    //if (convertType === 0) {
-    //    result.value = toFa(tempValue);
-    //}
-
-    //if (convertType === 1) {
-    //    console.log(tempValue);
-    //    result.value = toCe(tempValue);
-    //}
-
     if (chkSwitch.checked) {
         result.value = toCe(tempValue);
     }
