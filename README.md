@@ -2,7 +2,10 @@
 ## Description
   > Temperature converter API is used to convert Fahrenheit to Celsius and Celsius to Fahrenheit.
 ## Call the API
-	- Add [converter.js] to your html files,e.g:
+	- Add [converter.js](assets/script/convert.js) to your html files,e.g:
+```html
+<script src="node_modules/blueimp-file-upload/js/jquery.fileupload.js"></script>
+```
 	```html  
 	<script src="assets/script/converter.js" defer></script>
 	```
