@@ -1,0 +1,207 @@
+﻿@import "reset.css";
+/*---------------------------*/
+/*Header footer use*/
+/*---------------------------*/
+:root {
+    --app-header-height: 56px;
+    --app-footer-height: 112px;
+    --app-padding-width: 40px;
+    --app-blue:#0417f1;
+}
+/*header style*/
+header {
+    height: var(--app-header-height);
+    background-color: #5f0fe2;
+}
+ 
+/*section style*/
+section {
+    min-height: calc(100vh - var(--app-header-height));
+}
+/*header content*/
+.site-nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: var(--app-padding-width);
+    padding-right: var(--app-padding-width);
+}
+.site-nav-container > div {
+    height: var(--app-header-height);
+}
+.site-nav-title h2 {
+    line-height: var(--app-header-height);
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+.site-nav-desktop-nav{
+    height:56px;
+}
+.site-nav-desktop-nav ul {
+    list-style: none;
+}
+.site-nav-desktop-nav ul li {
+    line-height: 56px;
+    display: inline;
+}
+nav ul li + li {
+    margin-left: 18px;
+}
+.site-nav-desktop-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    transition: color 0.25s ease-in-out;
+}
+nav ul li a:hover {
+    color: #45d4f5;
+}
+ 
+/*main content*/
+.site-main-content-container {
+    min-height: calc(100vh - var(--app-header-height));
+    display: flex;
+    padding-left: var(--app-padding-width);
+    padding-right: var(--app-padding-width);
+    
+}
+.darkmode{
+    background-color:#000;
+}
+.lightmode {
+    background-color: #fff;
+}
+.input-darkmode {
+    background-color: #303030;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    color:#fff;
+}
+
+.input-lightmode {
+    background-color: #fff;
+    border: solid 1px rgba(0, 0, 0, 0.8);
+    color: #000;
+}
+.textcolor-white{
+    color:#fff;
+}
+.textcolor-black {
+    color: #000;
+}
+.site-main-content {
+    display: flex;
+    margin-top:60px;
+}
+.form-cls > div {
+    margin-top: 20px;
+}
+.input-cls {
+    width: 250px;
+    height: 50px;
+    border-radius: 4px;
+}
+.btn-compute {
+    width: 120px;
+    height: 50px;
+    color: #fff;
+    font-size: 16px;
+    background-color: var(--app-blue);
+    border-radius: 4px;
+    margin-left:10px;
+    animation: banner-content 0.5s ease-in-out;
+    animation-duration: 3s;
+    transition: all 0.25s ease-in-out;
+}
+
+.btn-compute:hover {
+        background-color: #0f97fb;
+}
+.rdo {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 0px 5px;
+    padding: initial;
+    border: initial;
+}
+
+.btn-mode {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 120px;
+    height: 50px;
+    color: #fff;
+    font-size: 16px;
+    background-color: var(--app-blue);
+    border-radius: 4px;
+    animation: banner-content 0.5s ease-in-out;
+    animation-duration: 3s;
+    transition: all 0.25s ease-in-out;
+}
+
+.btn-mode:hover {
+    background-color: #0f97fb;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ea06fb;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
