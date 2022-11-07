@@ -2,6 +2,8 @@
 ## Description
   > Temperature converter API is used to convert Fahrenheit to Celsius and Celsius to Fahrenheit.
 ## Call the API
+This allows you to include [jquery.fileupload.js](js/jquery.fileupload.js) and
+its extensions via `node_modules`, e.g:
 	- Add [converter.js](assets/script/convert.js) to your html files,e.g:
 ```html
 <script src="assets/script/converter.js"></script>
